@@ -1,0 +1,36 @@
+Model used = Gaussian Naive BayesClassifier model details:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Model score:
+0.96732
+
+Classification report:
+             precision    recall  f1-score   support
+
+          0       1.00      0.92      0.96        12
+          1       0.94      1.00      0.97        16
+          2       0.93      1.00      0.97        14
+          3       0.91      1.00      0.95        20
+          4       1.00      0.92      0.96        13
+          5       1.00      1.00      1.00        16
+          6       1.00      1.00      1.00        15
+          7       1.00      1.00      1.00        11
+          8       1.00      0.93      0.96        14
+          9       0.92      1.00      0.96        12
+         10       1.00      0.90      0.95        21
+         11       1.00      1.00      1.00        12
+         12       1.00      1.00      1.00        16
+         13       1.00      0.93      0.97        15
+         14       0.92      0.92      0.92        25
+         15       0.90      0.95      0.93        20
+         16       1.00      1.00      1.00        12
+         17       0.94      0.94      0.94        17
+         18       1.00      1.00      1.00        13
+         19       1.00      1.00      1.00        12
+
+avg / total       0.97      0.97      0.97       306
+
+

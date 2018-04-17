@@ -12,6 +12,8 @@ def get_images_labels_list(images_dir_path):
     for (dirpath, dirnames, filenames) in walk(images_dir_path):
         for filename in filenames:
             image_path = join(dirpath, filename)
+            #The os.path.basename(path) function returns the tail of the path.
+            #E.g.: The basename of 'C:\\Users\\Subham\\Documents\\Indian-Sign-Language\\data\\images\\train\\a' returns 'a'
             image_label = splitext(basename(dirpath))[0]
             image_info = {}
             image_info['image_path'] = image_path

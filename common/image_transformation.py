@@ -26,11 +26,19 @@ def make_background_black(frame):
 
     # Apply a series of erosions and dilations to the mask using an
     # elliptical kernel
+    #Structuring Element creates kernel of specified shape.
+    #Erosion ,erodes away boundaries ,useful to remove white noise
+    #Dilation , Joins broken parts
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
     skin_mask = cv2.erode(skin_mask, kernel, iterations=2)
     skin_mask = cv2.dilate(skin_mask, kernel, iterations=2)
-
+    #     we may detect many small false-positive skin regions in the image. 
+    #     To remove these small regions,we create an elliptical structuring kernel. 
+    #     Then, we use this kernel to perform two iterations of erosions and dilations, respectively. 
+    #     These erosions and dilations will help remove the small false-positive skin regions in the image.
+    
     # Prepare the second mask
+  
     lower_boundary = np.array([170, 80, 30], dtype="uint8")
     upper_boundary = np.array([180, 255, 250], dtype="uint8")
     skin_mask2 = cv2.inRange(frame, lower_boundary, upper_boundary)
@@ -89,7 +97,8 @@ def remove_arm(frame):
     #print("Done!")
     return frame
 
-
+#Contour are curve joining points(along the boundary) , having same color intensity.
+#useful Tool for shape analysis and object detection
 def find_largest_contour_index(contours):
     """
     Finds and returns the index of the largest contour from a list of contours.
@@ -117,13 +126,17 @@ def draw_contours(frame):
     #print("Drawing contour around white color...")
 
     # 'contours' is a list of contours found.
+    
+    #findContours(source image,contour retrieval mode,contour approximation method)
     _, contours, _ = cv2.findContours(
         frame, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-
+    
     # Finding the contour with the greatest area.
     largest_contour_index = find_largest_contour_index(contours)
 
     # Draw the largest contour in the image.
+    
+    #drawConntours(source image,list of contours,index of contour,color,thickness)
     cv2.drawContours(frame, contours,
                      largest_contour_index, (255, 255, 255), thickness=-1)
 

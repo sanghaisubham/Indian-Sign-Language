@@ -1,0 +1,36 @@
+Model used = Gaussian Naive BayesClassifier model details:
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)
+
+Model score:
+0.95098
+
+Classification report:
+             precision    recall  f1-score   support
+
+          0       0.92      1.00      0.96        12
+          1       1.00      0.94      0.97        16
+          2       1.00      1.00      1.00        14
+          3       0.90      0.95      0.93        20
+          4       0.92      0.92      0.92        13
+          5       1.00      1.00      1.00        16
+          6       1.00      1.00      1.00        15
+          7       1.00      1.00      1.00        11
+          8       1.00      0.93      0.96        14
+          9       0.86      1.00      0.92        12
+         10       1.00      0.71      0.83        21
+         11       1.00      1.00      1.00        12
+         12       1.00      0.94      0.97        16
+         13       0.88      0.93      0.90        15
+         14       0.89      0.96      0.92        25
+         15       0.90      0.90      0.90        20
+         16       1.00      1.00      1.00        12
+         17       0.94      1.00      0.97        17
+         18       1.00      1.00      1.00        13
+         19       0.92      1.00      0.96        12
+
+avg / total       0.95      0.95      0.95       306
+
+
