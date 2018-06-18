@@ -37,17 +37,35 @@ To run the project, perform following steps -
  5. Generate image-vs-label mapping for all the test images - `generate_images_labels.py test`.
  6. Test the model - `predict_from_file.py <model-name>`.
  7. To obtain Better Results, train the model using Convolutional Neural Network which can be done by running the cnn.py file after activating Tesorflow.
+ #### WorkFlow
  
- #### Accuracy with CNN
-The best accuracy was achieved by CNN using Momentum Optimizer and a learning rate of 0.3.The Plot for the same is depicted bleow.
-
-<p align="center">
+ The complete WorkFlow can be explained in diagramatic form as follows
+ <p align="center">
   <br>
-  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/momentum.png">
+  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/Workflow_Complete.PNG">
         <br>  
   </p>
   
-  **To-Do:**
- - Improve the accuracy if possible by collecting more data and applying various CNN architectures like VGG16,Le-Net5 etc.
+ 
+ #### Accuracy without SURF
+The accuracy of the various models tried without Feature Extraction is been shown as
+follows:
+
+<p align="center">
+  <br>
+  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/Accuracy_Without_SURF.PNG">
+        <br>  
+  </p>
+  
+  #### Accuracy using  SURF
+The accuracy of the various models tried without Feature Extraction is been shown as
+follows:
+
+<p align="center">
+  <br>
+  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/Accuracy_Using_SURF.PNG.PNG">
+        <br>  
+  </p>
+  
   
 
