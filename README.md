@@ -63,9 +63,12 @@ follows:
 
 <p align="center">
   <br>
-  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/Accuracy_Using_SURF.PNG.PNG">
+  <img align="center" src="https://github.com/sanghaisubham/Indian-Sign-Language/blob/master/Accuracy_Using_SURF.PNG">
         <br>  
   </p>
   
+  #### Conclusion
+  
+In this project, attempts were made to achieve state of the art results for the Indian Sign Language like the ones that have been achieved for American Sign Language. The best accuracy was achieved by SVM after Feature Extraction using SURF which were invariant to to scaling,rotation .Codebooks were formed after feature extraction using SURF and K means .The accuracy reported here cannot be reported as a perfect representation of actual results because we are limited by data but can give us a direction as to which methods can be used when data is abundant.
   
 
