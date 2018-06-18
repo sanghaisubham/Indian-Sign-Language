@@ -37,7 +37,9 @@ To run the project, perform following steps -
  5. Generate image-vs-label mapping for all the test images - `generate_images_labels.py test`.
  6. Test the model - `predict_from_file.py <model-name>`.
  7. To obtain Better Results, train the model using Convolutional Neural Network which can be done by running the cnn.py file after activating Tesorflow.
+ 
  8.Various other Supervised Models were trained which can be run by running- ` Final Python File.ipynb`.
+ 
  9.Further SURF was implemented , which can be run by running - `SURF.ipynb`to get better results.
  #### WorkFlow
  
